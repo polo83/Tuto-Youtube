@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 
-client.login("NTM2MjgwNjk3NDMwNzM2ODk3.Dy4Sfw.m3JT9bL80eYS2RZR5Zvp37ppDzs");
+client.login("votre token");
 
 client.commands = new Discord.Collection();
 
