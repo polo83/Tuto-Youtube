@@ -10,7 +10,7 @@ module.exports.run = (client, message, args) => {
     
         message.mentions.users.first().send(`Vous êtes kick du serveur **${message.guild.name}** par ${message.author.username}`)
             .then((member) => {
-                kickMember.ban()
+                kickMember.kick()
                     .then((member) => {
                         message.channel.send(`${member.user.username} est kick ! Par ${message.author.username}`);
                     })
@@ -20,7 +20,7 @@ module.exports.run = (client, message, args) => {
             })
                 .catch((err) => {
                     if (err) { console.error(err); }
-                        kickMember.ban()
+                        kickMember.kick()
                             .then((member) => {
                                 message.channel.send(`${member.user.username} est kick ! Par ${message.author.username}`);
                             })
