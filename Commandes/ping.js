@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
 
-module.exports.run = async(client, message, args) => {
-
+module.exports.run = (client, message, args) => {
     let début = Date.now();
-    await message.channel.send("Ping").then(async(m) => await m.edit(`Pong : ${Date.now() - début} ms`));
-
+    message.channel.send('Ping')
+        .then((m) => m.edit(`Pong : **${Date.now() - début}**ms`));
 };
 
 module.exports.help = {
-    name: "ping"
-}
+    name: 'ping'
+};
