@@ -6,7 +6,7 @@ module.exports.run = async(client, message, args) => {
     if (message.mentions.users.size === 0) { return message.channel.send('Vous devez mentionner un utilisateur !'); }
 
         let banMember = message.guild.member(message.mentions.users.first());
-        if (!banMember) { return message.channel.send('Je n\'ai pas trouvé l'utilisateur !'); }
+        if (!banMember) { return message.channel.send('Je n\'ai pas trouvé l\'utilisateur !'); }
     
         message.mentions.users.first().send(`Vous êtes banni du serveur **${message.guild.name}** par ${message.author.username}`)
             .then((member) => {
