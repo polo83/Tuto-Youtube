@@ -26,4 +26,4 @@ fs.readdir('./Events/', (error, f) => {
         });
 });
 
-client.login("token");
+client.login('token');
