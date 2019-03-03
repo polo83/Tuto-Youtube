@@ -9,7 +9,7 @@ module.exports.run = (client, message, args) => {
         if (!banMember) { return message.channel.send('Je n\'ai pas trouvé l\'utilisateur !'); }
     
         message.mentions.users.first().send(`Vous êtes banni du serveur **${message.guild.name}** par ${message.author.username}`)
-            .then((member) => {
+            .then(() => {
                 banMember.ban()
                     .then((member) => {
                         message.channel.send(`${member.user.username} est ban ! Par ${message.author.username}`);
@@ -18,8 +18,8 @@ module.exports.run = (client, message, args) => {
                             if (err) { return console.error(err); }
                         });
             })
-                .catch((err) => {
-                    if (err) { console.error(err); }
+                .catch((error) => {
+                    if (error) { console.error(error); }
                         banMember.ban()
                             .then((member) => {
                                 message.channel.send(`${member.user.username} est ban ! Par ${message.author.username}`);
