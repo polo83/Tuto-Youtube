@@ -9,7 +9,7 @@ module.exports.run = (client, message, args) => {
         if (!kickMember) { return message.channel.send('Je n\'ai pas trouvé l\'utilisateur !'); }
     
         message.mentions.users.first().send(`Vous êtes kick du serveur **${message.guild.name}** par ${message.author.username}`)
-            .then((member) => {
+            .then(() => {
                 kickMember.kick()
                     .then((member) => {
                         message.channel.send(`${member.user.username} est kick ! Par ${message.author.username}`);
@@ -18,8 +18,8 @@ module.exports.run = (client, message, args) => {
                             if (err) { return console.error(err); }
                         });
             })
-                .catch((err) => {
-                    if (err) { console.error(err); }
+                .catch((error) => {
+                    if (error) { console.error(error); }
                         kickMember.kick()
                             .then((member) => {
                                 message.channel.send(`${member.user.username} est kick ! Par ${message.author.username}`);
