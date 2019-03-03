@@ -8,4 +8,6 @@ Passez un bon moment avec ces tutos !
 
 Pour plus de renseignement, voici le Discord : https://discord.gg/5D4P6qR
 
+Si tu veux essayer mon propre bot **Alicia** : https://alicia-bot.tk/invite avec son dashboard : https://alicia-bot.tk/
+
 Cordialement Victor
