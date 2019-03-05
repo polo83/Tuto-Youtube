@@ -1,4 +1,5 @@
-Bienvenue sur le projet **Bot TUTO** !
+## Bot TUTO
+Bienvenue sur le projet !
 
 Ici, vous pourrez trouver **tous les codes** de la série **Bot Discord** en `JavaScript` propulsé par `Nodejs`.<br>
 N'hésitez pas à mettre une :star: si cela vous plaît.
