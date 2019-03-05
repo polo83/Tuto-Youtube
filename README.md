@@ -1,4 +1,4 @@
-## Bot TUTO
+## Tuto-YouTube
 Bienvenue sur le projet !
 
 Ici, vous pourrez trouver **tous les codes** de la série **Bot Discord** en `JavaScript` propulsé par `Nodejs`.<br>
