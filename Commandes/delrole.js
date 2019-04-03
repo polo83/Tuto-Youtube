@@ -7,6 +7,8 @@ module.exports.run = (client, message, args) => {
     let role = message.guild.roles.find((r) => r.name.toLowerCase() === args.join(' ').toLowerCase() || r.id === args.join(' '));
 
     if (!role) { return message.channel.send('Ce role n\'existe pas !'); }
+    if (!member.roles.has(role.id)) { return message.channel.send('Vous n\'avez pas ce role !'); }
+    
         member.removeRole(role.id)
             .then(() => message.channel.send('Vous n\'avez désormais plus le role ' + role.toString()))
             .catch(console.error);
